@@ -34,7 +34,7 @@ class OpenPluginPage:
     def _get_url(plugin_name):
         user, *repo = plugin_name.split('/')
         if not repo:
-            repo = 'vim-scripts'
+            user, repo = 'vim-scripts', user
         else:
             repo = repo[0]
         return "http://github.com/{user}/{repo}".format(
