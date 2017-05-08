@@ -1,4 +1,5 @@
 # Open Plugin Page
+[![Build Status](https://travis-ci.org/stsewd/open-plugin-page.nvim.svg?branch=master)](https://travis-ci.org/stsewd/open-plugin-page.nvim)
 
 Open the github repository of a neovim plugin
 
