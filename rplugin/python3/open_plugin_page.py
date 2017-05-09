@@ -6,6 +6,7 @@ import neovim
 
 @neovim.plugin
 class OpenPluginPage:
+
     def __init__(self, vim):
         self.vim = vim
 
