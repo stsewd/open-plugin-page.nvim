@@ -5,5 +5,4 @@ python:
   - "3.6"
 install:
   - pip install neovim
-before_script: cd rplugin/python3/
-script: python -m unittest -v
+script: make test
