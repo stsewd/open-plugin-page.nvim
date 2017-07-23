@@ -43,6 +43,6 @@ web browser!
 
 ```vim
 " Use `gp` for open the github page of the current plugin under the cursor.
-nnoremap <silent> gp :OpenPluginPage<CR>
+nnoremap gp :OpenPluginPage<CR>
 
 ```
