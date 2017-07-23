@@ -21,15 +21,20 @@ class OpenPluginPage:
 
     @staticmethod
     def _extract_url(line):
-        pattern = re.compile(
-                r"^Plug\s'(?P<name>[-/a-zA-Z0-9._]+)'(\s*,\s*(?P<options>.*))?"
-            )
-        match = pattern.match(line)
-        if match:
-            url = OpenPluginPage._get_url(match.group('name'))
+        plugin = OpenPluginPage._extract_plugin(line)
+        if plugin:
+            url = OpenPluginPage._get_url(plugin)
             return url
         else:
             return None
+
+    @staticmethod
+    def _extract_plugin(line):
+        pattern = re.compile(
+            r"^Plug\s'(?P<name>[-/a-zA-Z0-9._]+)'(\s*,\s*(?P<options>.*))?"
+        )
+        match = pattern.match(line)
+        return match.group('name')
 
     @staticmethod
     def _get_url(plugin_name):
@@ -39,6 +44,6 @@ class OpenPluginPage:
         else:
             repo = repo[0]
         return "http://github.com/{user}/{repo}".format(
-                    user=user,
-                    repo=repo
-                )
+            user=user,
+            repo=repo
+        )
