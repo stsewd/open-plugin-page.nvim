@@ -8,7 +8,7 @@ Note: For now only plugins managed by vim-plug are supported.
 ## Install
 
 Install using [vim-plug](https://github.com/junegunn/vim-plug). Put
-this on your `ìnit.vim`.
+this on your `init.vim`.
 
 ```
 Plug 'stsewd/open-plugin-page.nvim', { 'for': 'vim', 'do': ':UpdateRemotePlugins' }
@@ -38,11 +38,9 @@ call plug#end()
 Execute `:OpenPluginPage` and the plugin page will open in a new tab of your
 web browser! 
 
-
 ## Configuration Example
 
 ```vim
 " Use `gp` for open the github page of the current plugin under the cursor.
 nnoremap gp :OpenPluginPage<CR>
-
 ```
