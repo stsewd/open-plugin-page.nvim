@@ -8,7 +8,7 @@ class TestExtractUrl(TestCase):
     def assertGHUrl(self, url, name):
         self.assertIsNotNone(url)
         self.assertEqual(
-                url, "http://github.com/" + name
+                url, "https://github.com/" + name
             )
 
     def test_plugin_letters_only(self):
