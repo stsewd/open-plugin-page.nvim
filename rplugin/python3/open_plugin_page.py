@@ -43,7 +43,7 @@ class OpenPluginPage:
             user, repo = 'vim-scripts', user
         else:
             repo = repo[0]
-        return "http://github.com/{user}/{repo}".format(
+        return "https://github.com/{user}/{repo}".format(
             user=user,
             repo=repo
         )
