@@ -34,7 +34,7 @@ class OpenPluginPage:
             r"^Plug\s'(?P<name>[-/a-zA-Z0-9._]+)'(\s*,\s*(?P<options>.*))?"
         )
         match = pattern.match(line)
-        return match.group('name')
+        return match.group('name') if match else None
 
     @staticmethod
     def _get_url(plugin_name):
