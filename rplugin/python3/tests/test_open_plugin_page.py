@@ -48,3 +48,8 @@ class TestExtractUrl(TestCase):
         plugin_name = "Plug 'matchip.zip'"
         url = OpenPluginPage._extract_url(plugin_name)
         self.assertGHUrl(url, 'vim-scripts/matchip.zip')
+
+    def test_no_plugin(self):
+        plugin_name = 'Some random text'
+        url = OpenPluginPage._extract_url(plugin_name)
+        self.assertIsNone(url)
