@@ -3,6 +3,6 @@ if exists('g:loaded_open_plugin_page')
 endif
 
 autocmd! BufNewFile,BufRead *init.vim 
-       \ nnoremap <buffer> <unique> <Plug>(OpenPluginPage) :OpenPluginPage<CR>
+       \ nnoremap <buffer> <Plug>(OpenPluginPage) :OpenPluginPage<CR>
 
 let g:loaded_open_plugin_page = 1
