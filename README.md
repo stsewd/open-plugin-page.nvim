@@ -42,5 +42,5 @@ web browser!
 
 ```vim
 " Use `gp` for open the github page of the current plugin under the cursor.
-nnoremap gp :OpenPluginPage<CR>
+nmap gp <Plug>(OpenPluginPage)
 ```
