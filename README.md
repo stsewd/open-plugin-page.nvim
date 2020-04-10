@@ -1,6 +1,8 @@
 # Open Plugin Page
 [![Build Status](https://travis-ci.org/stsewd/open-plugin-page.nvim.svg?branch=master)](https://travis-ci.org/stsewd/open-plugin-page.nvim)
 
+**Plugin deprecated in favor of a more general solution with [gx-extended](https://github.com/stsewd/gx-extended.vim)**
+
 Open the github repository of a neovim plugin
 
 Note: For now only plugins managed by vim-plug are supported.
